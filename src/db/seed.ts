@@ -9,8 +9,8 @@ export const DEMO_STUDENTS: Student[] = [
   {
     sid: "S001",
     name: "Abel Anto",
-    course: "B.Tech Computer Science (Sem 5)",
-    institution: "State Institute of Technology, Campus North",
+    course: "B.Tech Computer Science (Sem 1)",
+    institution: "Christ COllege Of Engineering, Irinjalakuda",
     route: "Route 104 Express (Central ⇄ North Gate)",
     passId: "#GP-7749-KL",
     secret: "c3R1ZGVudF9zZWNyZXRfczAwMQ==", // base64 of 'student_secret_s001'
