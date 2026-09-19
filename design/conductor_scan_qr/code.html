@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>GoPass Transit</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "on-surface-variant": "#5a4138", "tertiary-container": "#00873a", "surface-variant": "#dae2fd", "background": "#faf8ff", "on-error-container": "#93000a", "primary-fixed": "#ffdbce", "secondary-fixed-dim": "#bcc7de", "on-error": "#ffffff", "on-primary-fixed-variant": "#7f2b00", "on-tertiary-fixed-variant": "#005320", "tertiary": "#006b2c", "inverse-primary": "#ffb598", "outline": "#8e7166", "on-background": "#131b2e", "secondary-container": "#d5e0f8", "on-tertiary-fixed": "#002109", "surface": "#faf8ff", "tertiary-fixed": "#7ffc97", "on-tertiary": "#ffffff", "on-primary-fixed": "#370e00", "primary-container": "cb4a00", "surface-container": "#eaedff", "on-secondary-fixed": "#111c2d", "error-container": "#ffdad6", "inverse-on-surface": "#eef0ff", "surface-container-lowest": "#ffffff", "surface-tint": "#a63b00", "surface-bright": "#faf8ff", "on-secondary-fixed-variant": "#3c475a", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "surface-container-highest": "#dae2fd", "secondary": "#545f73", "on-tertiary-container": "#f7fff2", "on-primary-container": "#fffbff", "outline-variant": "#e2bfb2", "on-secondary-container": "#586377", "error": "#ba1a1a", "tertiary-fixed-dim": "#62df7d", "surface-container-high": "#e2e7ff", "secondary-fixed": "#d8e3fb", "primary": "#a23a00", "primary-fixed-dim": "#ffb598" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-tablet": "2rem", "margin": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin-desktop": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "title-lg": ["Inter"], "label-code": ["JetBrains Mono"], "display-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "title-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"] }, "fontSize": { "title-lg": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "700" }], "label-code": ["14px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "display-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "title-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script><style>@layer base { html, body { width: 100vw; min-height: 100vh; margin: 0; padding: 0; background-color: #faf8ff; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="GoPass Transit Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UyNoIGEd8ugTHbnw_eq2ojHoXigNMVSkVBgbM14uE3oPQTNyqHeKmN63TSRwHZWDg4aCe-eqe1yj6CVG36RZ7ScdhJfo3f9w1J5hbP8BH8iq6JoZLSlY7hvl0X050tpr4Dq-6szgaG4FD-Uq8s3Xy_JFUS1nAr9EZIULv5Tod9QXha8s4vXdD4Vf3ixYfqv4xw5J2RsV6MDOxq_g9y8P7GebyF4lV_WMsq8GKk246u02cXMAs67pRnx9Kk"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">GoPass</span><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>OFFLINE READY</span></div><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider truncate">Conductor Scan</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- Conductor Mode Sub-Header Bar (tactile utility banner) -->
+<div class="w-full bg-inverse-surface text-inverse-on-surface px-gutter py-space-sm flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-7 h-7 rounded-lg bg-surface-container-lowest/10 p-1 flex items-center justify-center flex-shrink-0">
+<img alt="GoPass Transit Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UyNoIGEd8ugTHbnw_eq2ojHoXigNMVSkVBgbM14uE3oPQTNyqHeKmN63TSRwHZWDg4aCe-eqe1yj6CVG36RZ7ScdhJfo3f9w1J5hbP8BH8iq6JoZLSlY7hvl0X050tpr4Dq-6szgaG4FD-Uq8s3Xy_JFUS1nAr9EZIULv5Tod9QXha8s4vXdD4Vf3ixYfqv4xw5J2RsV6MDOxq_g9y8P7GebyF4lV_WMsq8GKk246u02cXMAs67pRnx9Kk"/>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-primary tracking-wide uppercase">GoPass INSPECTOR</span>
+<span class="bg-primary/20 text-primary-fixed px-1.5 py-0.5 rounded text-label-md font-label-md">TERMINAL #42</span>
+</div>
+<span class="font-body-sm text-body-sm text-surface-variant/80 truncate">Shift Active • Sector West Zone</span>
+</div>
+</div>
+<!-- Depot Synced Offline Badge -->
+<div class="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-tertiary-container text-on-tertiary-container flex-shrink-0 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed animate-ping"></span>
+<span class="material-symbols-outlined text-[14px]">cloud_done</span>
+<span class="font-label-md text-label-md font-bold tracking-wider">DEPOT SYNCED</span>
+</div>
+</div>
+<!-- Route Operational Strip -->
+<div class="w-full bg-surface-container-highest px-gutter py-space-xs flex items-center justify-between text-on-surface">
+<div class="flex items-center gap-space-xs font-title-md text-title-md">
+<span class="material-symbols-outlined text-primary text-[18px]">directions_bus</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">ROUTE 104</span>
+<span class="text-secondary">•</span>
+<span class="font-label-code text-label-code text-on-surface tracking-wider">BUS #KL-15-A-9821</span>
+</div>
+<div class="flex items-center gap-1 text-tertiary font-label-md text-label-md bg-tertiary-fixed/30 px-2 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span>ON SCHEDULE</span>
+</div>
+</div>
+<!-- Live Optical Camera Viewfinder Container -->
+<div class="relative w-full overflow-hidden bg-on-surface flex flex-col items-center justify-center min-h-[440px] px-gutter py-space-lg">
+<!-- Simulated Optical Camera Stream Noise / Environment Layer -->
+<div class="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90 pointer-events-none z-0"></div>
+<div class="absolute inset-0 opacity-15 pointer-events-none z-0" style="background-image: radial-gradient(#ffffff 1px, transparent 1px); background-size: 16px 16px;"></div>
+<!-- HUD Grid lines and Target Crosshair -->
+<div class="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+<div class="w-full h-px bg-white/10"></div>
+<div class="absolute h-full w-px bg-white/10"></div>
+</div>
+<!-- Live Ambient Telemetry Tag -->
+<div class="absolute top-4 left-4 z-10 flex items-center gap-2 bg-inverse-surface/80 backdrop-blur-md px-2.5 py-1 rounded text-inverse-on-surface font-label-code text-label-md">
+<span class="w-2 h-2 rounded-full bg-error animate-pulse"></span>
+<span>CAM REAR_OPTICAL_60FPS</span>
+</div>
+<div class="absolute top-4 right-4 z-10 flex items-center gap-1.5 bg-inverse-surface/80 backdrop-blur-md px-2.5 py-1 rounded text-inverse-on-surface font-label-code text-label-md">
+<span class="material-symbols-outlined text-[14px] text-tertiary-fixed">lock</span>
+<span>LOCAL SECURE ENCLAVE</span>
+</div>
+<!-- Viewfinder Reticle Frame -->
+<div class="relative z-10 w-64 h-64 sm:w-72 sm:h-72 rounded-xl flex items-center justify-center p-4 transition-all duration-300" id="scan-frame">
+<!-- Glow & Corner Brackets (Utilitarian Optical Reticles) -->
+<!-- Top Left -->
+<div class="absolute top-0 left-0 w-8 h-8 rounded-tl-xl border-t-4 border-l-4 border-primary"></div>
+<!-- Top Right -->
+<div class="absolute top-0 right-0 w-8 h-8 rounded-tr-xl border-t-4 border-r-4 border-primary"></div>
+<!-- Bottom Left -->
+<div class="absolute bottom-0 left-0 w-8 h-8 rounded-bl-xl border-b-4 border-l-4 border-primary"></div>
+<!-- Bottom Right -->
+<div class="absolute bottom-0 right-0 w-8 h-8 rounded-br-xl border-b-4 border-r-4 border-primary"></div>
+<!-- Animated Optical Laser Line -->
+<div class="absolute left-3 right-3 h-0.5 bg-gradient-to-r from-transparent via-primary to-transparent shadow-[0_0_12px_#cb4a00] animate-[bounce_2.4s_infinite]"></div>
+<!-- Ghost / Silhouette of Student Pass QR -->
+<div class="w-48 h-48 sm:w-52 sm:h-52 rounded-lg bg-surface-container-lowest/5 p-3 flex flex-col justify-between opacity-40">
+<div class="flex items-center justify-between">
+<div class="w-8 h-8 rounded bg-surface-variant/40 flex items-center justify-center">
+<span class="material-symbols-outlined text-white text-[16px]">school</span>
+</div>
+<div class="w-16 h-2 rounded bg-surface-variant/30"></div>
+<div class="w-6 h-6 rounded bg-surface-variant/40"></div>
+</div>
+<!-- Simulated Matrix Grid Center -->
+<div class="flex flex-col items-center justify-center py-2">
+<div class="grid grid-cols-5 gap-1.5 p-2 bg-black/40 rounded-lg">
+<div class="w-4 h-4 bg-white/70 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/30 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/80 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/20 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/70 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/30 rounded-xs"></div>
+<div class="w-4 h-4 bg-primary rounded-xs"></div>
+<div class="w-4 h-4 bg-white/40 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/70 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/20 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/80 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/30 rounded-xs"></div>
+<div class="w-4 h-4 bg-white/60 rounded-xs"></div>
+<div class="w-4 h-4 bg-tertiary-fixed rounded-xs"></div>
+<div class="w-4 h-4 bg-white/30 rounded-xs"></div>
+</div>
+</div>
+<div class="w-full flex items-center justify-between text-white/50 text-[10px] font-label-code">
+<span>GOPASS SECURE ID</span>
+<span>VAL-2025</span>
+</div>
+</div>
+</div>
+<!-- Instruction Hint Pill directly below viewfinder -->
+<div class="relative z-10 mt-6 flex flex-col items-center gap-1.5 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-lowest/90 backdrop-blur-md shadow-lg text-on-surface">
+<span class="material-symbols-outlined text-primary text-[20px]">qr_code_scanner</span>
+<span class="font-title-md text-title-md font-bold">Point camera at student's QR pass</span>
+</div>
+<p class="font-body-sm text-body-sm text-surface-container-high font-medium tracking-wide">
+        Offline optical reader • Instant 100ms verification
+      </p>
+</div>
+<!-- In-HUD Quick Verification Simulation Banner (Interactive Delight) -->
+<div class="relative z-10 mt-4 px-3 py-1.5 rounded-lg bg-inverse-surface/90 text-inverse-on-surface text-label-code text-label-md flex items-center gap-2 transition-opacity" id="scan-feedback">
+<span class="w-2 h-2 rounded-full bg-tertiary-fixed"></span>
+<span id="scan-status-text">SENSOR STABLE • STANDBY FOR PRESENTATION</span>
+</div>
+</div>
+<!-- Conductor Quick Utility Controls -->
+<div class="w-full px-gutter py-space-md bg-surface-container-low flex items-center justify-center gap-space-md shadow-inner">
+<!-- Flashlight/Torch Toggle Button -->
+<button class="flex-1 max-w-[180px] h-12 rounded-lg bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all" id="torch-toggle" type="button">
+<span class="material-symbols-outlined text-primary text-[22px]" id="torch-icon">flashlight_on</span>
+<span id="torch-label">Torch Light</span>
+</button>
+<!-- Manual Student ID Entry Button -->
+<button class="flex-1 max-w-[180px] h-12 rounded-lg bg-surface-container-lowest text-on-surface font-title-md text-title-md flex items-center justify-center gap-2 shadow-sm active:scale-95 transition-all" id="manual-btn" type="button">
+<span class="material-symbols-outlined text-secondary text-[22px]">keyboard</span>
+<span>Manual Entry</span>
+</button>
+</div>
+<!-- Manual Entry Bottom Sheet / Modal (Initially Hidden, Toggleable) -->
+<div class="hidden w-full px-gutter py-space-md bg-surface-container flex flex-col gap-space-sm" id="manual-modal">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[20px]">pin</span>
+<span class="font-title-lg text-title-lg text-on-surface">Direct Pass Code / Roll ID</span>
+</div>
+<button class="p-1 text-secondary hover:text-on-surface" id="close-manual-btn">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="flex items-center gap-2">
+<input class="flex-1 h-12 px-3 rounded-lg bg-surface-container-lowest text-on-surface font-label-code text-label-code focus:outline-none focus:bg-surface-bright shadow-sm" id="manual-input" placeholder="e.g. STU-9942-X" type="text" uppercase=""/>
+<button class="h-12 px-5 rounded-lg bg-primary text-on-primary font-title-md text-title-md shadow-md active:scale-95 transition-transform" id="verify-manual-btn">
+        Verify
+      </button>
+</div>
+</div>
+<!-- Conductor Shift Stats & Quick Audit Strip -->
+<div class="w-full px-gutter py-space-md flex flex-col gap-space-sm bg-surface">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm text-on-surface">Trip Scan Summary</span>
+<span class="font-label-md text-label-md text-secondary uppercase tracking-wider">Trip #3 • Route 104</span>
+</div>
+<!-- Metric Bento Tiles -->
+<div class="grid grid-cols-3 gap-2 w-full">
+<div class="p-3 rounded-lg bg-surface-container flex flex-col items-start shadow-sm">
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span class="font-label-md text-label-md">VALIDATED</span>
+</div>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1" id="count-valid">42</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">98% accepted</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container flex flex-col items-start shadow-sm">
+<div class="flex items-center gap-1 text-error">
+<span class="material-symbols-outlined text-[16px]">warning</span>
+<span class="font-label-md text-label-md">INVALID</span>
+</div>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1" id="count-invalid">01</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Route mismatch</span>
+</div>
+<div class="p-3 rounded-lg bg-surface-container flex flex-col items-start shadow-sm">
+<div class="flex items-center gap-1 text-secondary">
+<span class="material-symbols-outlined text-[16px]">sync</span>
+<span class="font-label-md text-label-md">PENDING</span>
+</div>
+<span class="font-headline-lg text-headline-lg font-bold text-on-surface mt-1">00</span>
+<span class="font-body-sm text-body-sm text-secondary truncate">Local buffer clear</span>
+</div>
+</div>
+<!-- Last Scanned Pass Mini Receipt Banner -->
+<div class="w-full p-3.5 rounded-lg bg-surface-container-high flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-on-tertiary-fixed text-[24px]">verified_user</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-title-md text-title-md text-on-surface font-bold truncate">Rahul Sharma</span>
+<span class="px-1.5 py-0.5 rounded bg-tertiary/15 text-tertiary font-label-md text-label-md">PASS PASS #4891</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">St. Teresa College • Stage 3 to 14</span>
+</div>
+</div>
+<div class="flex flex-col items-end flex-shrink-0 ml-2">
+<span class="font-label-code text-label-md text-on-surface font-bold">10:41:12 AM</span>
+<span class="font-label-md text-label-md text-tertiary font-semibold">VALID PASS</span>
+</div>
+</div>
+</div>
+<!-- Bottom Info Banner: Active Route & Bus Details -->
+<div class="w-full px-gutter py-space-sm bg-surface-container-lowest text-on-surface flex items-center justify-between shadow-[0_-2px_8px_rgba(0,0,0,0.03)]">
+<div class="flex items-center gap-space-xs min-w-0">
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Active Route: 104 • Bus #KL-15-A-9821</span>
+</div>
+<div class="flex items-center gap-1 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px]">battery_charging_full</span>
+<span>92%</span>
+</div>
+</div>
+<!-- Fixed Conductor 3-Tab Bottom Navigation Dock -->
+<div class="w-full bg-surface-container-lowest shadow-[0_-4px_16px_rgba(0,0,0,0.08)]">
+<div class="grid grid-cols-3 h-16 max-w-lg mx-auto">
+<!-- 1. Scan (Active, bold orange scanner icon & label) -->
+<button class="flex flex-col items-center justify-center min-h-[44px] text-primary transition-colors" id="tab-scan" type="button">
+<div class="p-1 rounded-full bg-primary-fixed flex items-center justify-center">
+<span class="material-symbols-outlined text-[24px] text-primary" style="font-variation-settings: 'FILL' 1;">qr_code_scanner</span>
+</div>
+<span class="font-title-md text-title-md font-bold mt-0.5 text-primary">Scan</span>
+</button>
+<!-- 2. Logs (Inactive, gray) -->
+<button class="flex flex-col items-center justify-center min-h-[44px] text-secondary hover:text-on-surface transition-colors" id="tab-logs" type="button">
+<span class="material-symbols-outlined text-[24px]">receipt_long</span>
+<span class="font-label-md text-label-md mt-0.5">Logs</span>
+</button>
+<!-- 3. Settings (Inactive, gray) -->
+<button class="flex flex-col items-center justify-center min-h-[44px] text-secondary hover:text-on-surface transition-colors" id="tab-settings" type="button">
+<span class="material-symbols-outlined text-[24px]">tune</span>
+<span class="font-label-md text-label-md mt-0.5">Settings</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Torch Toggle Interaction
+    const torchBtn = document.getElementById('torch-toggle');
+    const torchIcon = document.getElementById('torch-icon');
+    const torchLabel = document.getElementById('torch-label');
+    let torchActive = false;
+
+    if (torchBtn) {
+      torchBtn.addEventListener('click', function() {
+        torchActive = !torchActive;
+        if (torchActive) {
+          torchBtn.classList.add('bg-primary-fixed', 'text-on-primary-fixed');
+          torchBtn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+          torchIcon.innerText = 'flashlight_off';
+          torchLabel.innerText = 'Torch ON';
+        } else {
+          torchBtn.classList.remove('bg-primary-fixed', 'text-on-primary-fixed');
+          torchBtn.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          torchIcon.innerText = 'flashlight_on';
+          torchLabel.innerText = 'Torch Light';
+        }
+      });
+    }
+
+    // Manual ID Drawer Toggle
+    const manualBtn = document.getElementById('manual-btn');
+    const manualModal = document.getElementById('manual-modal');
+    const closeManualBtn = document.getElementById('close-manual-btn');
+    const verifyManualBtn = document.getElementById('verify-manual-btn');
+    const scanStatusText = document.getElementById('scan-status-text');
+    const countValid = document.getElementById('count-valid');
+
+    if (manualBtn && manualModal) {
+      manualBtn.addEventListener('click', function() {
+        manualModal.classList.toggle('hidden');
+      });
+    }
+
+    if (closeManualBtn && manualModal) {
+      closeManualBtn.addEventListener('click', function() {
+        manualModal.classList.add('hidden');
+      });
+    }
+
+    if (verifyManualBtn && scanStatusText && countValid) {
+      verifyManualBtn.addEventListener('click', function() {
+        const input = document.getElementById('manual-input');
+        if (input && input.value.trim() !== '') {
+          scanStatusText.innerText = 'CODE RECOGNIZED: ' + input.value.toUpperCase() + ' (INSTANT AUTH)';
+          scanStatusText.parentElement.classList.remove('bg-inverse-surface/90');
+          scanStatusText.parentElement.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+          
+          let cur = parseInt(countValid.innerText, 10);
+          if (!isNaN(cur)) countValid.innerText = (cur + 1).toString();
+          
+          input.value = '';
+          manualModal.classList.add('hidden');
+
+          setTimeout(function() {
+            scanStatusText.parentElement.classList.remove('bg-tertiary-container', 'text-on-tertiary-container');
+            scanStatusText.parentElement.classList.add('bg-inverse-surface/90');
+            scanStatusText.innerText = 'SENSOR STABLE • STANDBY FOR PRESENTATION';
+          }, 2600);
+        }
+      });
+    }
+
+    // Interactive Viewfinder Tap Simulation
+    const scanFrame = document.getElementById('scan-frame');
+    if (scanFrame && scanStatusText && countValid) {
+      scanFrame.addEventListener('click', function() {
+        scanStatusText.innerText = 'PASS DETECTED • 100MS CIPHER SIGNED VALID';
+        scanStatusText.parentElement.classList.remove('bg-inverse-surface/90');
+        scanStatusText.parentElement.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+        
+        let cur = parseInt(countValid.innerText, 10);
+        if (!isNaN(cur)) countValid.innerText = (cur + 1).toString();
+
+        setTimeout(function() {
+          scanStatusText.parentElement.classList.remove('bg-tertiary-container', 'text-on-tertiary-container');
+          scanStatusText.parentElement.classList.add('bg-inverse-surface/90');
+          scanStatusText.innerText = 'SENSOR STABLE • STANDBY FOR PRESENTATION';
+        }, 2200);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-title-md"><div class="flex justify-around items-center h-16 px-space-xs"><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-secondary hover:text-on-surface transition-colors" data-path="my-pass" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-md text-label-md mt-0.5">My Pass</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-secondary hover:text-on-surface transition-colors" data-path="routes-schedule" href="#"><span class="material-symbols-outlined text-[24px]">directions_bus</span><span class="font-label-md text-label-md mt-0.5">Routes</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] transition-colors text-primary font-title-md" data-path="conductor-scan" href="#"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span><span class="font-label-md text-label-md mt-0.5">Scan</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-secondary hover:text-on-surface transition-colors" data-path="transit-wallet" href="#"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-md text-label-md mt-0.5">Wallet</span></a></div></nav></body></html>

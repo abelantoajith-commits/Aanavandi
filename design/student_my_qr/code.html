@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><title>GoPass Transit</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-primary": "#ffffff", "on-secondary": "#ffffff", "surface-container-low": "#f2f3ff", "on-surface": "#131b2e", "on-surface-variant": "#5a4138", "tertiary-container": "#00873a", "surface-variant": "#dae2fd", "background": "#faf8ff", "on-error-container": "#93000a", "primary-fixed": "#ffdbce", "secondary-fixed-dim": "#bcc7de", "on-error": "#ffffff", "on-primary-fixed-variant": "#7f2b00", "on-tertiary-fixed-variant": "#005320", "tertiary": "#006b2c", "inverse-primary": "#ffb598", "outline": "#8e7166", "on-background": "#131b2e", "secondary-container": "#d5e0f8", "on-tertiary-fixed": "#002109", "surface": "#faf8ff", "tertiary-fixed": "#7ffc97", "on-tertiary": "#ffffff", "on-primary-fixed": "#370e00", "primary-container": "cb4a00", "surface-container": "#eaedff", "on-secondary-fixed": "#111c2d", "error-container": "#ffdad6", "inverse-on-surface": "#eef0ff", "surface-container-lowest": "#ffffff", "surface-tint": "#a63b00", "surface-bright": "#faf8ff", "on-secondary-fixed-variant": "#3c475a", "inverse-surface": "#283044", "surface-dim": "#d2d9f4", "surface-container-highest": "#dae2fd", "secondary": "#545f73", "on-tertiary-container": "#f7fff2", "on-primary-container": "#fffbff", "outline-variant": "#e2bfb2", "on-secondary-container": "#586377", "error": "#ba1a1a", "tertiary-fixed-dim": "#62df7d", "surface-container-high": "#e2e7ff", "secondary-fixed": "#d8e3fb", "primary": "#a23a00", "primary-fixed-dim": "#ffb598" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "space-lg": "1.5rem", "space-xl": "2rem", "margin-tablet": "2rem", "margin": "1rem", "space-sm": "0.5rem", "space-md": "1rem", "gutter-desktop": "1.5rem", "margin-desktop": "3rem", "space-xs": "0.25rem" }, "fontFamily": { "title-lg": ["Inter"], "label-code": ["JetBrains Mono"], "display-lg": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "label-lg": ["Inter"], "headline-sm": ["Plus Jakarta Sans"], "body-md": ["Inter"], "body-lg": ["Inter"], "label-md": ["Inter"], "title-md": ["Inter"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Inter"] }, "fontSize": { "title-lg": ["16px", { "lineHeight": "22px", "letterSpacing": "0.01em", "fontWeight": "700" }], "label-code": ["14px", { "lineHeight": "18px", "letterSpacing": "0.08em", "fontWeight": "600" }], "display-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "display-lg-mobile": ["32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-md": ["22px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "label-lg": ["13px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "headline-sm": ["18px", { "lineHeight": "24px", "fontWeight": "600" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "label-md": ["11px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }], "title-md": ["14px", { "lineHeight": "20px", "fontWeight": "600" }], "headline-lg": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } }</script><style>@layer base { html, body { width: 100vw; min-height: 100vh; margin: 0; padding: 0; background-color: #faf8ff; } body { overscroll-behavior: none; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface text-on-surface flex flex-col min-h-screen selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0"><img alt="GoPass Transit Logo" class="h-8 w-auto object-contain flex-shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1UyNoIGEd8ugTHbnw_eq2ojHoXigNMVSkVBgbM14uE3oPQTNyqHeKmN63TSRwHZWDg4aCe-eqe1yj6CVG36RZ7ScdhJfo3f9w1J5hbP8BH8iq6JoZLSlY7hvl0X050tpr4Dq-6szgaG4FD-Uq8s3Xy_JFUS1nAr9EZIULv5Tod9QXha8s4vXdD4Vf3ixYfqv4xw5J2RsV6MDOxq_g9y8P7GebyF4lV_WMsq8GKk246u02cXMAs67pRnx9Kk"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight truncate">GoPass</span><span class="inline-flex items-center gap-1 px-1.5 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-md text-label-md"><span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>OFFLINE READY</span></div><span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-wider truncate">My Pass</span></div></div><div class="flex items-center gap-space-xs flex-shrink-0"><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full px-gutter pb-space-lg">
+<!-- Live Offline Status Banner Strip -->
+<div class="w-full mb-space-md mt-space-sm bg-surface-container-low rounded-xl p-space-sm shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="w-7 h-7 rounded-lg bg-tertiary-fixed flex items-center justify-center flex-shrink-0">
+<span class="material-symbols-outlined text-tertiary text-[18px]">cloud_done</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-title-md text-title-md text-on-surface truncate">Offline Active</span>
+</div>
+<span class="font-body-sm text-body-sm text-secondary truncate">Last synced: Today, 07:15 AM (Cached Securely)</span>
+</div>
+</div>
+<span class="font-label-code text-label-code text-tertiary bg-tertiary-container/10 px-2 py-0.5 rounded-full flex-shrink-0">AES-256</span>
+</div>
+<!-- Primary Civic Transit Pass Card (Centerpiece) -->
+<div class="relative w-full bg-surface-container-lowest rounded-2xl shadow-xl overflow-hidden flex flex-col">
+<!-- Physical Card Header Ribbon -->
+<div class="bg-primary text-on-primary px-space-md py-3 flex items-center justify-between relative overflow-hidden">
+<!-- Watermark civic seal overlay inside ribbon -->
+<div class="absolute -right-4 -bottom-6 w-24 h-24 rounded-full bg-on-primary/10 pointer-events-none flex items-center justify-center">
+<span class="material-symbols-outlined text-on-primary/20 text-[64px]">local_police</span>
+</div>
+<div class="flex items-center gap-2 min-w-0 z-10">
+<div class="w-7 h-7 rounded bg-on-primary/20 flex items-center justify-center flex-shrink-0 backdrop-blur-sm">
+<img alt="GoPass Transit Logo" class="w-5 h-5 object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1UyNoIGEd8ugTHbnw_eq2ojHoXigNMVSkVBgbM14uE3oPQTNyqHeKmN63TSRwHZWDg4aCe-eqe1yj6CVG36RZ7ScdhJfo3f9w1J5hbP8BH8iq6JoZLSlY7hvl0X050tpr4Dq-6szgaG4FD-Uq8s3Xy_JFUS1nAr9EZIULv5Tod9QXha8s4vXdD4Vf3ixYfqv4xw5J2RsV6MDOxq_g9y8P7GebyF4lV_WMsq8GKk246u02cXMAs67pRnx9Kk"/>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md tracking-wider uppercase text-primary-fixed truncate">KSRTC Translink Authority</span>
+<span class="font-headline-sm text-headline-sm text-on-primary tracking-tight font-bold truncate">STUDENT CONCESSION PASS</span>
+</div>
+</div>
+<div class="z-10 bg-on-primary text-primary px-2 py-0.5 rounded-full flex items-center gap-1 flex-shrink-0 shadow-sm">
+<span class="material-symbols-outlined text-[14px]">verified</span>
+<span class="font-label-md text-label-md uppercase tracking-wider">VERIFIED</span>
+</div>
+</div>
+<!-- Student Identity & Metadata Section -->
+<div class="p-space-md bg-surface-container-low flex items-center gap-space-md">
+<div class="relative flex-shrink-0">
+<div class="w-[74px] h-[90px] rounded-xl overflow-hidden shadow-sm bg-surface-container-highest">
+<img alt="Sarah Jenkins Student Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACEfmpUt1DN314rQbNfraGe8vZzPLhMLvxEhubrAooaLz-qHhoPZMrpg0fcrydmMkWaJBQDpJuzaE0nFgWt6GKtyatqYo1y4ciwg3tBnXgGWyX5MLAXKjb27UxGx6_ZQJv0m7lHRYXMSEEzcLqb3A5CaMi9nGaFN0SFJoJJgjZGFBFgUL7stO0HTh6nFTVLg1Y31ZYCCeWukaWCXwtaXiAd1ynftiZBmgSO9MKcCWrof3kfgv9ksgsTQ"/>
+</div>
+<div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center shadow">
+<span class="material-symbols-outlined text-[12px] font-bold">check</span>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<div class="flex items-center justify-between gap-1">
+<span class="font-label-md text-label-md uppercase text-primary tracking-wider font-bold">ID: STU-8829-2026</span>
+<span class="font-label-code text-[11px] text-secondary">ZONE-A/B</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface truncate mt-0.5 font-bold">Sarah Jenkins</h2>
+<div class="flex items-center gap-1.5 mt-0.5 text-secondary">
+<span class="material-symbols-outlined text-[15px] flex-shrink-0 text-on-surface-variant">school</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">State Institute of Technology</span>
+</div>
+<div class="flex items-center gap-2 mt-2">
+<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-secondary-container text-on-secondary-fixed font-label-md text-label-md font-semibold">Undergraduate</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded-md bg-primary-fixed text-on-primary-fixed font-label-md text-label-md font-semibold">Daily Commuter</span>
+</div>
+</div>
+</div>
+<!-- Ticket Perforation with Inward Cut Notches -->
+<div class="relative w-full h-6 bg-surface-container-lowest flex items-center justify-between px-space-xs overflow-hidden">
+<!-- Left circular inward punch notch -->
+<div class="w-6 h-6 rounded-full bg-surface -ml-4 shadow-inner"></div>
+<!-- Perforated dotted line -->
+<div class="flex-1 border-b-2 border-dashed border-secondary-container mx-2"></div>
+<!-- Right circular inward punch notch -->
+<div class="w-6 h-6 rounded-full bg-surface -mr-4 shadow-inner"></div>
+</div>
+<!-- QR Validation Core Arena -->
+<div class="px-space-md pt-space-xs pb-space-md flex flex-col items-center relative bg-surface-container-lowest">
+<!-- Dynamic anti-fraud halo container around QR -->
+<div class="relative p-3 rounded-2xl bg-surface-container shadow-inner mb-space-sm">
+<!-- Corner optical fiducials (civic ticket alignment) -->
+<div class="absolute top-1.5 left-1.5 w-3 h-3 border-t-2 border-l-2 border-primary rounded-tl-sm"></div>
+<div class="absolute top-1.5 right-1.5 w-3 h-3 border-t-2 border-r-2 border-primary rounded-tr-sm"></div>
+<div class="absolute bottom-1.5 left-1.5 w-3 h-3 border-b-2 border-l-2 border-primary rounded-bl-sm"></div>
+<div class="absolute bottom-1.5 right-1.5 w-3 h-3 border-b-2 border-r-2 border-primary rounded-br-sm"></div>
+<!-- Scannable High-Contrast SVG QR code substrate -->
+<div class="w-48 h-48 sm:w-52 sm:h-52 bg-surface-container-lowest rounded-xl p-2.5 flex items-center justify-center relative shadow-sm">
+<svg class="w-full h-full text-on-surface" fill="currentColor" viewbox="0 0 160 160">
+<!-- QR Top Left Position Probe -->
+<rect fill="currentColor" height="36" rx="4" width="36" x="10" y="10"></rect>
+<rect fill="#FFFFFF" height="24" rx="2" width="24" x="16" y="16"></rect>
+<rect fill="currentColor" height="12" rx="1" width="12" x="22" y="22"></rect>
+<!-- QR Top Right Position Probe -->
+<rect fill="currentColor" height="36" rx="4" width="36" x="114" y="10"></rect>
+<rect fill="#FFFFFF" height="24" rx="2" width="24" x="120" y="16"></rect>
+<rect fill="currentColor" height="12" rx="1" width="12" x="126" y="22"></rect>
+<!-- QR Bottom Left Position Probe -->
+<rect fill="currentColor" height="36" rx="4" width="36" x="10" y="114"></rect>
+<rect fill="#FFFFFF" height="24" rx="2" width="24" x="16" y="120"></rect>
+<rect fill="currentColor" height="12" rx="1" width="12" x="22" y="126"></rect>
+<!-- Timing and Alignment Patterns -->
+<rect fill="currentColor" height="6" width="6" x="52" y="20"></rect>
+<rect fill="currentColor" height="6" width="6" x="64" y="20"></rect>
+<rect fill="currentColor" height="6" width="6" x="76" y="20"></rect>
+<rect fill="currentColor" height="6" width="6" x="88" y="20"></rect>
+<rect fill="currentColor" height="6" width="6" x="100" y="20"></rect>
+<rect fill="currentColor" height="6" width="6" x="20" y="52"></rect>
+<rect fill="currentColor" height="6" width="6" x="20" y="64"></rect>
+<rect fill="currentColor" height="6" width="6" x="20" y="76"></rect>
+<rect fill="currentColor" height="6" width="6" x="20" y="88"></rect>
+<rect fill="currentColor" height="6" width="6" x="20" y="100"></rect>
+<!-- Data payload matrix blocks -->
+<rect fill="currentColor" height="6" width="6" x="52" y="32"></rect>
+<rect fill="currentColor" height="6" width="12" x="64" y="38"></rect>
+<rect fill="currentColor" height="12" width="6" x="82" y="32"></rect>
+<rect fill="currentColor" height="6" width="14" x="94" y="38"></rect>
+<rect fill="currentColor" height="6" width="12" x="34" y="52"></rect>
+<rect fill="currentColor" height="14" width="6" x="52" y="52"></rect>
+<rect fill="currentColor" height="6" width="12" x="102" y="52"></rect>
+<rect fill="currentColor" height="12" width="6" x="120" y="52"></rect>
+<rect fill="currentColor" height="6" width="14" x="132" y="58"></rect>
+<rect fill="currentColor" height="12" width="6" x="34" y="70"></rect>
+<rect fill="currentColor" height="6" width="12" x="46" y="76"></rect>
+<rect fill="currentColor" height="6" width="18" x="102" y="70"></rect>
+<rect fill="currentColor" height="12" width="6" x="126" y="76"></rect>
+<rect fill="currentColor" height="6" width="14" x="34" y="94"></rect>
+<rect fill="currentColor" height="12" width="6" x="54" y="94"></rect>
+<rect fill="currentColor" height="14" width="6" x="102" y="88"></rect>
+<rect fill="currentColor" height="6" width="14" x="114" y="94"></rect>
+<rect fill="currentColor" height="12" width="6" x="134" y="94"></rect>
+<rect fill="currentColor" height="6" width="12" x="52" y="114"></rect>
+<rect fill="currentColor" height="14" width="6" x="70" y="114"></rect>
+<rect fill="currentColor" height="6" width="12" x="82" y="114"></rect>
+<rect fill="currentColor" height="6" width="14" x="100" y="120"></rect>
+<rect fill="currentColor" height="12" width="6" x="120" y="114"></rect>
+<rect fill="currentColor" height="6" width="12" x="132" y="120"></rect>
+<rect fill="currentColor" height="14" width="6" x="52" y="132"></rect>
+<rect fill="currentColor" height="6" width="14" x="64" y="138"></rect>
+<rect fill="currentColor" height="14" width="6" x="84" y="132"></rect>
+<rect fill="currentColor" height="6" width="12" x="96" y="138"></rect>
+<rect fill="currentColor" height="6" width="18" x="114" y="132"></rect>
+<rect fill="currentColor" height="12" width="6" x="138" y="138"></rect>
+<!-- Center Translink Transit Bus Badge Seal -->
+<rect fill="#FFFFFF" height="40" rx="8" width="40" x="60" y="60"></rect>
+<rect fill="#a23a00" height="32" rx="6" width="32" x="64" y="64"></rect>
+<path d="M72 71 C72 69.5 73.5 68 75 68 L85 68 C86.5 68 88 69.5 88 71 L88 85 C88 86.5 86.5 87 85 87 L85 89 C85 89.6 84.4 90 83.5 90 L82.5 90 C81.6 90 81 89.6 81 89 L81 87 L79 87 L79 89 C79 89.6 78.4 90 77.5 90 L76.5 90 C75.6 90 75 89.6 75 89 L75 87 L75 87 C73.5 87 72 86.5 72 85 Z" fill="#FFFFFF"></path>
+<rect fill="#a23a00" height="6" rx="1" width="12" x="74" y="71"></rect>
+<circle cx="75" cy="83" fill="#a23a00" r="1.5"></circle>
+<circle cx="85" cy="83" fill="#a23a00" r="1.5"></circle>
+</svg>
+</div>
+</div>
+<!-- Prominent Validity Pill Badge with live green beacon dot -->
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed shadow-sm">
+<span class="relative flex h-2.5 w-2.5">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-tertiary"></span>
+</span>
+<span class="font-title-md text-title-md font-bold tracking-tight">Valid for 16 September 2026</span>
+</div>
+<!-- Live rotating token indicator with dynamic SVG countdown progress ring -->
+<div class="flex items-center gap-2.5 mt-space-sm text-secondary">
+<div class="relative w-5 h-5 flex items-center justify-center">
+<svg class="w-5 h-5 -rotate-90" viewbox="0 0 24 24">
+<circle class="text-surface-container-high" cx="12" cy="12" fill="none" r="9" stroke="currentColor" stroke-width="2.5"></circle>
+<circle class="text-primary" cx="12" cy="12" fill="none" id="tokenRing" r="9" stroke="currentColor" stroke-dasharray="56.5" stroke-dashoffset="14" stroke-linecap="round" stroke-width="2.5"></circle>
+</svg>
+</div>
+<span class="font-label-code text-label-code text-on-surface">Code refreshes in <span class="font-bold text-primary" id="timerText">04:18</span></span>
+</div>
+</div>
+<!-- Authorized Corridor & Route Badge Section -->
+<div class="px-space-md py-space-sm bg-surface-container flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<span class="material-symbols-outlined text-primary text-[20px]">swap_calls</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-md text-label-md uppercase text-secondary">Corridor Authority</span>
+<span class="font-title-md text-title-md text-on-surface font-semibold truncate">Central Terminal ⇄ Tech Park Campus</span>
+</div>
+</div>
+<span class="font-label-code text-label-code bg-surface-container-lowest text-on-surface px-2.5 py-1 rounded-lg shadow-sm font-bold">RT-402</span>
+</div>
+</div>
+<!-- Secondary Actions and Utility Notice (Below Card) -->
+<div class="w-full flex flex-col gap-space-sm mt-space-md">
+<!-- Secondary Action Button: Regenerate Offline Token -->
+<button class="w-full h-12 bg-surface-container-lowest hover:bg-surface-container-low text-on-surface font-title-md text-title-md rounded-xl shadow-sm flex items-center justify-center gap-2 transition-all active:scale-[0.98]" id="regenTokenBtn" type="button">
+<span class="material-symbols-outlined text-primary text-[20px] transition-transform duration-500" id="regenIcon">sync</span>
+<span>Regenerate Offline Token</span>
+</button>
+<!-- Quick Utility Concession Rule Chip -->
+<div class="w-full bg-secondary-container/60 rounded-xl p-space-sm flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-on-secondary-container text-[20px] flex-shrink-0 mt-0.5">directions_bus</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-secondary-fixed font-semibold">Service Eligibility</span>
+<span class="font-body-sm text-body-sm text-on-secondary-container mt-0.5 leading-snug">Valid on all Ordinary &amp; Fast Passenger Services. Not applicable for Super Deluxe or AC Super Fast express coaches.</span>
+</div>
+</div>
+<!-- Rapid Conductor Inspection Guideline -->
+<div class="flex items-center justify-between px-space-xs pt-1">
+<div class="flex items-center gap-1.5 text-secondary">
+<span class="material-symbols-outlined text-[16px]">qr_code_scanner</span>
+<span class="font-body-sm text-body-sm">Hold screen flat towards conductor scanner</span>
+</div>
+<button class="flex items-center gap-1 text-primary font-label-md text-label-md uppercase hover:underline" id="brightnessBtn" type="button">
+<span class="material-symbols-outlined text-[16px]">brightness_high</span>
+<span>Max Light</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Interactive Client-side Logic for Live Token Ring, Countdown, and Regeneration Feedback -->
+<script>
+  (function() {
+    let timeLeft = 258; // 04:18 in seconds
+    const totalDuration = 300; // 5 minutes standard token life
+    const timerElem = document.getElementById('timerText');
+    const ringElem = document.getElementById('tokenRing');
+    const regenBtn = document.getElementById('regenTokenBtn');
+    const regenIcon = document.getElementById('regenIcon');
+    const circumference = 2 * Math.PI * 9; // radius = 9
+
+    function updateDisplay() {
+      const minutes = Math.floor(timeLeft / 60);
+      const seconds = timeLeft % 60;
+      if (timerElem) {
+        timerElem.textContent = 
+          String(minutes).padStart(2, '0') + ':' + String(seconds).padStart(2, '0');
+      }
+      if (ringElem) {
+        const fraction = timeLeft / totalDuration;
+        const offset = circumference * (1 - fraction);
+        ringElem.style.strokeDashoffset = offset;
+      }
+    }
+
+    const interval = setInterval(function() {
+      if (timeLeft > 0) {
+        timeLeft--;
+        updateDisplay();
+      } else {
+        timeLeft = totalDuration;
+        updateDisplay();
+      }
+    }, 1000);
+
+    if (regenBtn) {
+      regenBtn.addEventListener('click', function() {
+        if (regenIcon) {
+          regenIcon.classList.add('rotate-180');
+          setTimeout(() => regenIcon.classList.remove('rotate-180'), 500);
+        }
+        timeLeft = totalDuration;
+        updateDisplay();
+      });
+    }
+
+    const brightnessBtn = document.getElementById('brightnessBtn');
+    if (brightnessBtn) {
+      let isMax = false;
+      brightnessBtn.addEventListener('click', function() {
+        isMax = !isMax;
+        brightnessBtn.classList.toggle('text-tertiary', isMax);
+        brightnessBtn.classList.toggle('text-primary', !isMax);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/85 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.05)]" data-active-classes="text-primary font-title-md"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] transition-colors text-primary font-title-md" data-path="my-pass" href="#"><span class="material-symbols-outlined text-[24px]">badge</span><span class="font-label-md text-label-md mt-0.5">My Pass</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-secondary hover:text-on-surface transition-colors" data-path="routes-schedule" href="#"><span class="material-symbols-outlined text-[24px]">directions_bus</span><span class="font-label-md text-label-md mt-0.5">Routes</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-secondary hover:text-on-surface transition-colors" data-path="conductor-scan" href="#"><span class="material-symbols-outlined text-[24px]">qr_code_scanner</span><span class="font-label-md text-label-md mt-0.5">Scan</span></a><a class="flex flex-col items-center justify-center min-w-[64px] min-h-[44px] text-secondary hover:text-on-surface transition-colors" data-path="transit-wallet" href="#"><span class="material-symbols-outlined text-[24px]">account_balance_wallet</span><span class="font-label-md text-label-md mt-0.5">Wallet</span></a></div></nav></body></html>
