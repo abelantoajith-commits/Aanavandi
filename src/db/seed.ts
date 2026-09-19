@@ -8,9 +8,9 @@ const currentYear = new Date().getFullYear();
 export const DEMO_STUDENTS: Student[] = [
   {
     sid: "S001",
-    name: "Sarah Jenkins",
-    course: "B.Tech Computer Science (Sem 5)",
-    institution: "State Institute of Technology, Campus North",
+    name: "Abel Anto Ajith",
+    course: "B.Tech Computer Science (Sem 1)",
+    institution: "Christ College of Engineering, Irinjalakuda",
     route: "Route 104 Express (Central ⇄ North Gate)",
     passId: "#GP-7749-KL",
     secret: "c3R1ZGVudF9zZWNyZXRfczAwMQ==", // base64 of 'student_secret_s001'
@@ -19,7 +19,7 @@ export const DEMO_STUDENTS: Student[] = [
     usedDates: [],
     approvalStatus: "pending", // Starts as pending to demonstrate onboarding gate (§5.2.0)
     documentName: undefined,
-    avatarUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&auto=format&fit=crop&q=80"
+    avatarUrl: "https://drive.google.com/file/d/1AgsZeFEJARTtzzqnIlZOV7jFQUlCMjcA/view?usp=drive_link?w=300&auto=format&fit=crop&q=80"
   },
   {
     sid: "S002",
@@ -40,7 +40,7 @@ export const DEMO_STUDENTS: Student[] = [
     sid: "S003",
     name: "Arun Kumar",
     course: "B.Com Finance (Sem 6)",
-    institution: "St. Thomas College of Commerce",
+    institution: "St. Thomas College ,Thrissur",
     route: "Route 12 City Circular (Depot ⇄ Station)",
     passId: "#GP-4410-KL",
     secret: "c3R1ZGVudF9zZWNyZXRfczAwMw==", // base64 of 'student_secret_s003'

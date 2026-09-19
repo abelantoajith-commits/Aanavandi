@@ -25,7 +25,7 @@ export interface ValidationResult {
  */
 export async function validateQRToken(
   rawQRText: string,
-  conductorName = 'Rajesh K. (Badge #4092)',
+  conductorName = 'Abel Simon. (Badge #4092)',
   route = 'Route 104 Express (Central ⇄ North Gate)'
 ): Promise<ValidationResult> {
   const ts = Date.now();
